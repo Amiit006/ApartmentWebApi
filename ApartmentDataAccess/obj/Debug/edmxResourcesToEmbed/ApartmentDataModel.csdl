@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ApartmentsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ApartmentDetail">
+    <Key>
+      <PropertyRef Name="ApartmentId" />
+    </Key>
+    <Property Name="ApartmentId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ApartmentName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NoOfFloors" Type="Int32" Nullable="false" />
+    <Property Name="Address1" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Address2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="City" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="State" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PinCode" Type="Int32" Nullable="false" />
+    <Property Name="Country" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="ApartmentsEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ApartmentDetails" EntityType="Self.ApartmentDetail" />
+    <FunctionImport Name="getApartmentDetails" ReturnType="Collection(ApartmentsModel.getApartmentDetails_Result)" />
+    <EntitySet Name="CityMasters" EntityType="ApartmentsModel.CityMaster" />
+  </EntityContainer>
+  <ComplexType Name="getApartmentDetails_Result">
+    <Property Type="Int32" Name="ApartmentId" Nullable="false" />
+    <Property Type="String" Name="ApartmentName" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="NoOfFloors" Nullable="false" />
+    <Property Type="String" Name="Address1" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Address2" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="City" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="State" Nullable="false" MaxLength="30" />
+    <Property Type="Int32" Name="PinCode" Nullable="false" />
+    <Property Type="String" Name="Country" Nullable="false" MaxLength="30" />
+  </ComplexType>
+  <EntityType Name="CityMaster">
+    <Key>
+      <PropertyRef Name="CityId" />
+    </Key>
+    <Property Name="CityId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CityName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CityState" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

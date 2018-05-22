@@ -1,0 +1,10 @@
+C:\Amit Sahoo\Projects\Apartment\ApartmentWebApi\ApartmentDataAccess\bin\Debug\ApartmentDataAccess.dll.config
+C:\Amit Sahoo\Projects\Apartment\ApartmentWebApi\ApartmentDataAccess\bin\Debug\ApartmentDataAccess.dll
+C:\Amit Sahoo\Projects\Apartment\ApartmentWebApi\ApartmentDataAccess\bin\Debug\ApartmentDataAccess.pdb
+C:\Amit Sahoo\Projects\Apartment\ApartmentWebApi\ApartmentDataAccess\bin\Debug\EntityFramework.dll
+C:\Amit Sahoo\Projects\Apartment\ApartmentWebApi\ApartmentDataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Amit Sahoo\Projects\Apartment\ApartmentWebApi\ApartmentDataAccess\bin\Debug\EntityFramework.xml
+C:\Amit Sahoo\Projects\Apartment\ApartmentWebApi\ApartmentDataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Amit Sahoo\Projects\Apartment\ApartmentWebApi\ApartmentDataAccess\obj\Debug\ApartmentDataAccess.csprojResolveAssemblyReference.cache
+C:\Amit Sahoo\Projects\Apartment\ApartmentWebApi\ApartmentDataAccess\obj\Debug\ApartmentDataAccess.dll
+C:\Amit Sahoo\Projects\Apartment\ApartmentWebApi\ApartmentDataAccess\obj\Debug\ApartmentDataAccess.pdb
